@@ -27,10 +27,10 @@ def get_status():
 @app.get("/summary")
 def get_summary():
     return {
-        "service": "lobster-skills-test",
+        "app": "lobster-skills-test",
         "version": "v1.0.0",
-        "env": "test",
-        "routes": ["/info", "/version", "/status", "/summary", "/ui"],
+        "endpoints": ["/info", "/version", "/status", "/summary", "/ui"],
+        "uptime_note": "service is running",
     }
 
 
